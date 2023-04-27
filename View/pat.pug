@@ -1,0 +1,151 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Tweety
+  link(href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  link(rel='stylesheet' href='/css/pat.css')
+.sidebar
+  h2.tweety_logo tweety.
+  .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+    span.material-symbols-outlined  home 
+    h2 Home
+  .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+    span.material-symbols-outlined search
+    h2 Search
+  .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+    span.material-symbols-outlined  notifications 
+    h2 Notifications
+  .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+    span.material-symbols-outlined  mail 
+    h2 Messages
+  .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+    span.material-symbols-outlined  bookmark 
+    h2 Bookmarks
+  .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+    span.material-symbols-outlined  person 
+    h2 Profile
+  .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+    span.material-symbols-outlined  more_horiz 
+    h2 More
+  div
+    button.sidebar__post  Create Ads 
+
+.container
+  .profile-header
+    .profile-banner
+    .edit-profile
+      img.profile-avatar(src='https://via.placeholder.com/150' alt='Profile Picture')
+      h3.profile-edit edit personal information
+    .profile-info
+      h1.profile-name Account Name
+      p.profile-username @username
+      p.profile-bio description here.
+      .profile-stats
+        //
+          <div class="profile-stat">
+          <p class="profile-stat-label">Tweets</p>
+          <p class="profile-stat-value">10</p>
+          </div>
+        .profile-stat
+          p.profile-stat-value 150
+          p.profile-stat-label Following
+        .profile-stat
+          p.profile-stat-value 20
+          p.profile-stat-label Followers
+  .menu-bar
+    .menu-button
+      h3 Tweet
+    .menu-button
+      h3 Reply
+    .menu-button
+      h3 Media
+    .menu-button
+      h3 Liking
+  .feed
+    .post
+      .post_avatar
+        img(src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' alt='')
+      .post_body
+        .post_header
+          .post_headertext
+            h3
+              | montira innoy
+              span.post_headerspecial
+                span.material-symbols-outlined.post_badge verified
+                | @pluspat
+          .post_headerDesription
+            p
+              | fas;lkdjfaldslkasdjfa;sdfjalsjfasdkjfaslkdjfasldjfasldjfa
+        img(src='https://images.samsung.com/is/image/samsung/p6pim/ca/feature/164397733/ca-feature-galaxy-s-535284254?$FB_TYPE_A_MO_JPG$' alt='')
+        .post_footer
+          span.material-symbols-outlined chat
+          span.material-symbols-outlined repeat
+          span.material-symbols-outlined favorite
+          span.material-symbols-outlined equalizer
+          span.material-symbols-outlined ios_share
+    .post
+      .post_avatar
+        img(src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' alt='')
+      .post_body
+        .post_header
+          .post_headertext
+            h3
+              | Montira Innoy
+              span.post_headerspecial
+                span.material-symbols-outlined.post_badge verified
+                | @pluspat
+          .post_headerDesription
+            p
+              | fas;lkdjfaldslkasdjfa;sdfjalsjfasdkjfaslkdjfasldjfasldjfa
+        img(src='https://image.makewebeasy.net/makeweb/m_1920x0/pyuHEt3NP/POW_Model/11.jpg' alt='')
+        .post_footer
+          span.material-symbols-outlined chat
+          span.material-symbols-outlined repeat
+          span.material-symbols-outlined favorite
+          span.material-symbols-outlined equalizer
+          span.material-symbols-outlined ios_share
+    .post
+      .post_avatar
+        img(src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' alt='')
+      .post_body
+        .post_header
+          .post_headertext
+            h3
+              | Montira Innoy
+              span.post_headerspecial
+                span.material-symbols-outlined.post_badge verified
+                | @pluspat
+          .post_headerDesription
+            p
+              | fas;lkdjfaldslkasdjfa;sdfjalsjfasdkjfaslkdjfasldjfasldjfa
+        img(src='https://sdgs.tu.ac.th/wp-content/uploads/2021/11/S06-051-1140x760.jpg' alt='')
+        .post_footer
+          span.material-symbols-outlined chat
+          span.material-symbols-outlined repeat
+          span.material-symbols-outlined favorite
+          span.material-symbols-outlined equalizer
+          span.material-symbols-outlined ios_share
+    .post
+      .post_avatar
+        img(src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' alt='')
+      .post_body
+        .post_header
+          .post_headertext
+            h3
+              | Montira Innoy
+              span.post_headerspecial
+                span.material-symbols-outlined.post_badge verified
+                | @pluspat
+          .post_headerDesription
+            p
+              | fas;lkdjfaldslkasdjfa;sdfjalsjfasdkjfaslkdjfasldjfasldjfa
+        img(src='https://image.makewebeasy.net/makeweb/m_1920x0/pyuHEt3NP/ALC%2FBanner_4.jpg?v=202012190947' alt='')
+        .post_footer
+          span.material-symbols-outlined chat
+          span.material-symbols-outlined repeat
+          span.material-symbols-outlined favorite
+          span.material-symbols-outlined equalizer
+          span.material-symbols-outlined ios_share

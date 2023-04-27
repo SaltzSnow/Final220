@@ -1,0 +1,66 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Tweety
+  link(href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  link(rel='stylesheet' href='/css/homepage.css')
+body
+  .sidebar
+    h2.tweety_logo tweety.
+    .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+      span.material-symbols-outlined  home 
+      h2 Home
+    .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+      span.material-symbols-outlined search
+      h2 Search
+    .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+      span.material-symbols-outlined  notifications 
+      h2 Notifications
+    .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+      span.material-symbols-outlined  mail 
+      h2 Messages
+    .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+      span.material-symbols-outlined  bookmark 
+      h2 Bookmarks
+    .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+      span.material-symbols-outlined  person 
+      h2 Profile
+    .sidebarOption(style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;")
+      span.material-symbols-outlined  more_horiz 
+      h2 More
+    div
+      button.sidebar__post  Create Ads 
+  .feed
+    .feed_header
+      h2 Home
+    .postBox
+      form
+        .post_input
+          img(src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' alt='')
+          input(type='text' placeholder='Post...')
+        button.postButton  POST 
+    if user 
+      each ad in post
+        .post
+          .post_avatar
+            img(src=`/img/post/${ad.photo.startsWith(`${post}`)}` alt='')
+          .post_body
+            .post_header
+              .post_headertext
+                h3= ad.userId.name
+                  span.post_headerspecial
+                    span.material-symbols-outlined.post_badge verified
+                    |
+              .post_headerDesription
+                p= `${ad.description}`
+            img(src='https://images.samsung.com/is/image/samsung/p6pim/ca/feature/164397733/ca-feature-galaxy-s-535284254?$FB_TYPE_A_MO_JPG$' alt='')
+            .post_footer
+              span.material-symbols-outlined chat
+              span.material-symbols-outlined repeat
+              span.material-symbols-outlined favorite
+              span.material-symbols-outlined equalizer
+              span.material-symbols-outlined ios_share
+  script(src='/js/index.js')

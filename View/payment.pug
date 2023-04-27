@@ -1,0 +1,55 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Payment Method
+  link(rel='stylesheet' href='/css/payment.css')
+.out-of-card
+  .card
+    .card-title
+      | Payment
+    form
+      span#card-header Saved cards:
+      .row.row-1
+        .col-2
+          img.img-fluid(src='https://img.icons8.com/color/48/000000/mastercard-logo.png')
+        .col-7
+          p **** **** **** 3193
+        .col-3.d-flex.justify-content-center
+          a(href='#') Remove card
+      .row.row-1
+        .col-2
+          img.img-fluid(src='https://img.icons8.com/color/48/000000/visa.png')
+        .col-7
+          p **** **** **** 4296
+        .col-3.d-flex.justify-content-center
+          a(href='#') Remove card
+      .row.row-1
+        .col-2
+          img.img-fluid1(src='https://static.thenounproject.com/png/31390-200.png')
+        .col-7
+        .col-3.d-flex.justify-content-center
+          a(href='#') Add new card
+      span#card-header Card Information:
+      .row-1
+        .row.row-2
+          span#card-inner Card holder name
+        .row.row-2
+          input(type='text' placeholder='XXXXXXXX')
+      .row.three
+        .col-7
+          .row-1
+            .row.row-2
+              span#card-inner Card number
+            .row.row-2
+              input(type='text' placeholder='XXXX-XXXX-X')
+        .col-2
+          input(type='text' placeholder='Exp. date')
+        .col-2
+          input(type='text' placeholder='CVV')
+      button.button.d-flex.mx-auto
+        b submit
+  .footer-button
+    button.back-button Back
+    button.launch-button Launch Campaign
